@@ -1,0 +1,26 @@
+name: Pruebas de Remesas Que Fuef
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probar:
+    name: Pruebas de idempotencia y cotizacion
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Obtener el codigo
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Comprobar Node
+        run: node --version
+      - name: Ejecutar npm test
+        run: npm test
