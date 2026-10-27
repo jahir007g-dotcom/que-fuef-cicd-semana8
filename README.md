@@ -1,6 +1,6 @@
 # CI/CD de Remesas Que Fuef
 
-Equipo: pendiente de personalizar
+Equipo: Remesas Que Fuef - Jahir Joshue Gomez Marcillo y Esteban Tasambay
 
 Practica academica de Arquitectura para Plataformas FinTech, UIDE, Semana 8.
 Preparada y ejecutada con asistencia de IA para el ADR-06.
